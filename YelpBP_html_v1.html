@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Xuan </title>
+  <link type="text/css" href='YelpBPstyle.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div class='body-content'>
+    <h1 class="title"> Xuan </h1>
+
+    <div class='image' id=" background image"></div>
+
+    <div class='button-container'>
+      <button id="random" onClick="getRest()"> getRestaurant </button>
+      <!--button id = 'specific' onClick="getSpecificImage()"> </button-->
+    </div>
+  </div>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d"
+            },
+            fontFamily: {
+              nunito: "'Nunito Sans', sans-serif;"
+            }
+          },
+          container: {
+            center: true,
+            padding: "1.5rem"
+          }
+        }
+      };
+    </script>
+    <style type="text/tailwindcss">
+      body {
+         @apply font-nunito antialiased;
+       }
+       </style>
+  </head>
+
+  <body>
+    </header>
+    <div class="container py-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 h-screen">
+        <div id="filters" class="mb-3 bg-white col-span-3 p-6 relative bg-gray-200 shadow-inner block">
+          <div class="Radius of search">
+            <legend class="text-base font-medium text-gray-900 my-3">Radius of Search</legend>
+            <select id="Radius of search"
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option value="">-- Radius of Search --</option>
+              <option value="10km">10km</option>
+              <option value="20km">20km</option>
+              <option value="40km">40km</option>
+            </select>
+          </div>
+
+
+
+          <div class="restType">
+            <legend class="text-base font-medium text-gray-900 my-3"> Restaurant Type</legend>
+            <select id="restType"
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option value="">-- Restaurant Type --</option>
+              <option value="Top 5"> Top 5 in Your Area </option>
+              <option value="Italian"> Italian </option>
+              <option value="Sushi"> Sushi Bar </option>
+              <option value="Fast Food"> Fast Food </option>
+            </select>
+          </div>
+
+          <div class="cost">
+            <legend class="text-base font-medium text-gray-900 my-3"> Restaurant Type</legend>
+            <select id="cost2"
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option value="">-- Cost --</option>
+              <option value="$"> $ </option>
+              <option value="$$"> $$ </option>
+              <option value="$$$"> $$$ </option>
+              <option value="$$$$"> $$$$ </option>
+            </select>
+          </div>
+          
+          <!-- <div class="restType">
+            <legend class="text-base font-medium text-gray-900 my-3"> Restaurant Type</legend>
+            <select id="restType"
+              class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option value="">-- Restaurant Type --</option>
+              <option value="Top 5"> Top 5 in Your Area </option>
+              <option value="Italian"> Italian </option>
+              <option value="Sushi"> Sushi Bar </option>
+              <option value="Fast Food"> Fast Food </option>
+            </select>
+          </div> -->
+      
+          <div id="goods" <!-- class="col-span-9 px-3 relative grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-2" -->
+          </div>
+        </div>
+      </div>
+      <!-- <script src="filter.js"></script> -->
+
+  </body>
+
+  </html>
+
+  <header class="py-6 bg-red-600">
+    <div class="container mx-auto">
+      <h2 class="text-3xl text-center text-white font-bold">
+        Xuan
+      </h2>
+    </div>
+    </div>
+    *
+    <script src="Yelpindex.js"> </script>
+</body>
+
+</html>
